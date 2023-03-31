@@ -67,7 +67,7 @@ export const Header = () => {
           <h2 className={styles.h2}>Agendados</h2>
           {
           todoList.map((todo) => 
-            <li className={styles.item}>{todo}</li>
+            <li className={styles.item} key={todo}>{todo}</li>
            )
           }
         </ul>
