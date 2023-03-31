@@ -40,9 +40,6 @@ const Home: NextPage = () => {
   }
 
 
-  const handleDeletItem = () => {
-    setTodoList([])
-  }
 
 
   return (
@@ -60,7 +57,6 @@ const Home: NextPage = () => {
           onChange={(e) => setIsNumber(e.target.value)}
           />
           <input type="button" value="Agendar" className={styles.btn} onClick={sendEmail} />
-          <input type="button" value="Apagar" className={styles.btn} onClick={handleDeletItem} />
         </form>
 
         <div className={styles.list}>
